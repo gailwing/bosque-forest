@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="The Bosque is a forest website of the bosque forest cencer of how it manages and utilizes forest resources
+    for conservational, research and educational purposes."
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="../images/favicon-gen.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png" />
+    <!-- <link rel="manifest" href="manifest.webmanifest" /> -->
+
+    <link href="/dist/output.css" rel="stylesheet" />
+
+    <script defer src="../js/script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <title>Bosque &mdash; Improving Forest Management</title>
+  </head>
+
+  <body>
+    <div class="">
+      <!-- HEADER/HERO SECTION -->
+
+      <div
+        class="bg-[url(../images/hero.jpg)] opacity-90 bg-center bg-cover min-h-screen"
+      >
+        <div class="bg-black bg-opacity-30 min-h-screen w-full">
+          <!-- HEADER -->
+
+          <div class="header">
+            <div
+              class="h-24 px-7 md:px-10 flex items-center justify-between text-white font-medium"
+            >
+              <div class="bg-green-700 p-2 rounded-full">
+                <div class="flex items-center bg-white pl-2 py-1 rounded-full">
+                  <img class="h-12" src="../images/logo.png" alt="logo" />
+                  <div
+                    class="text-xl font-bold font-mono uppercase italic text-green-800 -translate-x-4 translate-y-1.5"
+                  >
+                    bosque
+                  </div>
+                </div>
+              </div>
+
+              <!-- ---------navigation--------- -->
+
+              <nav class="hidden md:block">
+                <ul class="flex items-center gap-2 text-lg">
+                  <li class="capitalize text-white">
+                    <a
+                      class="hover:bg-white hover:text-green-800 py-3 px-4 rounded-lg bg-green-800 transition-all duration-200"
+                      href="#hero"
+                      >welcome</a
+                    >
+                  </li>
+                  <li class="capitalize text-white">
+                    <a
+                      class="hover:bg-white hover:text-green-800 py-3 px-4 rounded-lg bg-green-800 transition-all duration-200"
+                      href="#about"
+                      >about</a
+                    >
+                  </li>
+                  <li class="capitalize text-white">
+                    <a
+                      class="hover:bg-white hover:text-green-800 py-3 px-4 rounded-lg bg-green-800 transition-all duration-200"
+                      href="#project"
+                      >projects</a
+                    >
+                  </li>
+
+                  <li class="capitalize text-white">
+                    <a
+                      class="hover:bg-white hover:text-green-800 py-3 px-4 rounded-lg bg-green-800 transition-all duration-200"
+                      href="#blog"
+                      >blog</a
+                    >
+                  </li>
+                  <li class="capitalize text-white">
+                    <a
+                      class="hover:bg-white hover:text-green-800 py-3 px-4 rounded-lg bg-green-800 transition-all duration-200"
+                      href="#contact"
+                      >contact</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+
+              <!-- buttons for mobile navigation -->
+
+              <button id="menu-btn" class="menu-btn md:hidden z-10">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="menu w-8 h-8"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                  />
+                </svg>
+
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="close hidden w-8 h-8"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+            </div>
+
+            <!-- --------mobile navigation------- -->
+
+            <div class="md:hidden">
+              <ul
+                id="menu"
+                class="navbar absolute top-0 left-0 bg-black hidden flex-col justify-center pl-10 gap-6 h-screen w-full text-lg"
+              >
+                <li class="capitalize text-white">
+                  <a
+                    class="hover:border-b-2 pb-1 transition-all duration-200"
+                    href="#"
+                    >welcome</a
+                  >
+                </li>
+                <li class="capitalize text-white">
+                  <a
+                    class="hover:border-b-2 pb-1 transition-all duration-200"
+                    href="#"
+                    >about</a
+                  >
+                </li>
+                <li class="capitalize text-white">
+                  <a
+                    class="pb-1 hover:border-b-2 transition-all duration-200"
+                    href="#"
+                    >project</a
+                  >
+                </li>
+
+                <li class="capitalize text-white">
+                  <a
+                    class="pb-1 hover:border-b-2 transition-all duration-200"
+                    href="#"
+                    >blog</a
+                  >
+                </li>
+                <li class="capitalize text-white">
+                  <a
+                    class="pb-1 hover:border-b-2 transition-all duration-200"
+                    href="#"
+                    >contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- HERO -->
+
+          <div id="hero" class="hero pt-32 pb-12">
+            <div class="px-8 md:px-16">
+              <div class="md:px-6 text-center text-white">
+                <h1
+                  class="font-bold text-4xl md:text-5xl md:tracking-wider mb-8 leading-tight"
+                >
+                  TOUR. LEARN. GROW.
+                </h1>
+              </div>
+              <div class="text-center text-white lg:px-28">
+                <p class="mb-4 text-2xl font-medium">
+                  The Bosque Forest Center manages and utilizes forest resources
+                  for conservational, research and educational purposes.
+                </p>
+                <p class="text-xl font-medium italic tracking-wide">
+                  The Bosque, home to the greens and wilds!
+                </p>
+              </div>
+              <div
+                class="mt-16 text-center flex flex-col items-center justify-center gap-6 md:flex-row md:gap-8"
+              >
+                <a
+                  class="w-fit px-12 py-6 bg-gradient-to-r from-green-400 to-yellow-600 text-white text-lg font-semibold rounded-full hover:scale-110 hover:bg-gradient-to-l transition-all duration-200"
+                  href="#"
+                  >Support</a
+                >
+                <a
+                  class="w-fit px-10 py-6 bg-white font-semibold rounded-full text-lg hover:scale-110 transition-all duration-200"
+                  href="#"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-------- FEATURED IN -------->
+
+      <div class="py-16">
+        <div class="flex justify-around">
+          <img class="h-14 md:h-24" src="../images/f1.png" alt="We forest" />
+          <img class="h-14 md:h-24" src="../images/f2.png" alt="Bridgeland" />
+          <img class="h-14 md:h-24" src="../images/f3.png" alt="Down north" />
+          <img class="h-14 md:h-24" src="../images/f4.png" alt="Sierra" />
+          <img
+            class="h-14 md:h-24"
+            src="../images/f5.png"
+            alt="Adventurist inspired"
+          />
+        </div>
+      </div>
+
+      <!--------- ABOUT -------->
+
+      <div id="about" class="py-24 px-6 md:px-12 lg:px-8 bg-yellow-50">
+        <div class="text-center px-10 md:px-40 mb-12">
+          <span
+            class="inline-block text-center text-sm font-bold text-green-700 uppercase mb-4"
+            >about us</span
+          >
+
+          <h2 class="text-2xl capitalize font-bold mb-6">
+            Bosque Forest Center
+          </h2>
+          <p class="text-lg">
+            The Bosque Forest Unit was set up 23 October 1993 to presever the
+            forest life and wilds. It manages and utilises timber coffers for
+            conservation, exploration, education and training at the following
+            spots within the vast measure of the forest border.
+          </p>
+          <a
+            class="inline-block px-6 py-2 bg-gradient-to-r from-green-400 to-yellow-600 text-white text-lg font-semibold rounded-full hover:scale-110 hover:bg-gradient-to-l transition-all duration-200 my-4"
+            href="#"
+            >Learn more</a
+          >
+        </div>
+        <div
+          class="grid grid-cols-2 lg:grid-cols-4 md:gap-12 lg:gap-6 gap-6 gap-y-10"
+        >
+          <div
+            class="shadow-xl rounded-xl overflow-hidden flex flex-col gap-10 pb-8 bg-white"
+          >
+            <img class="w-full" src="../images/g1.jpg" alt="Forest reserve" />
+            <div class="flex flex-col gap-6 px-5">
+              <h3 class="text-2xl font-bold mb-2">Bosque Forest Reserve</h3>
+              <p>
+                Bosque forest was firstly part of much larger forest in
+                southwestern Europe but now, girdled by the megacity of Berlin,
+                it's the stylish defended.
+              </p>
+              <a
+                class="font-bold text-green-700 hover:text-yellow-500 transition-all duration-200"
+                href="#"
+                >Read more</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="shadow-xl rounded-xl overflow-hidden flex flex-col gap-10 pb-8 bg-white"
+          >
+            <img
+              class="w-full"
+              src="../images/g2.jpg"
+              alt="Ethnobotanical Garden"
+            />
+            <div class="flex flex-col gap-6 px-5">
+              <h3 class="text-2xl font-bold mb-2">Ethnobotanical Garden</h3>
+              <p>
+                The Ethnobotanical Garden aims to cultivate, propagate, and
+                display shops of practical and artistic significance.
+              </p>
+              <a
+                class="font-bold text-green-700 hover:text-yellow-500 transition-all duration-200"
+                href="#"
+                >Read more</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="shadow-xl rounded-xl overflow-hidden flex flex-col gap-10 pb-8 bg-white"
+          >
+            <img
+              class="w-full"
+              src="../images/g3 (2).jpg"
+              alt="Botanical Nursery"
+            />
+            <div class="flex flex-col gap-6 px-5">
+              <h3 class="text-2xl font-bold mb-2">Botanical Nursery</h3>
+              <p>
+                The Botanical Nursery stocks over 130 indigenous shops and over
+                50 different fantastic shops, including fruit trees, potted
+                shops, walls and meadows.
+              </p>
+              <a
+                class="font-bold text-green-700 hover:text-yellow-500 transition-all duration-200"
+                href="#"
+                >Read more</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="shadow-xl rounded-xl overflow-hidden flex flex-col gap-10 pb-8 bg-white"
+          >
+            <img
+              class="w-full"
+              src="../images/g4.jpg"
+              alt="Ornithological Monitoring"
+            />
+            <div class="flex flex-col gap-6 px-5">
+              <h3 class="text-2xl font-bold mb-2">Ornithological Monitoring</h3>
+              <p>
+                Ornithological Monitoring design end is to cover the Important
+                Bird Area more effectively by carrying out scientific checks.
+              </p>
+              <a
+                class="font-bold text-green-700 hover:text-yellow-500 transition-all duration-200"
+                href="#"
+                >Read more</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-------- PROJECTS ------->
+
+      <div id="project" class="py-24 px-10 md:px-8 lg:px-12">
+        <span
+          class="block text-center text-sm font-bold text-green-700 uppercase mb-2"
+          >our Projects</span
+        >
+
+        <h2 class="text-2xl text-center capitalize font-bold mb-16">
+          Featured Projects
+        </h2>
+        <div class="grid grid-cols-1 gap-14">
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-8 lg:gap-12 items-center"
+          >
+            <div class="flex flex-col gap-2">
+              <h2 class="text-2xl font-bold">Reforestation</h2>
+              <p class="font-medium italic mb-3">
+                Best for restoring forests and dedicated carbon removal.
+              </p>
+
+              <p>
+                Reforestation projects plant thousands of trees, oftentimes
+                reverting degraded land cleared for cattle or agriculture back
+                to forest. Of the three forest project types, they are typically
+                the best for quickly drawing CO2 out of the atmosphere, because
+                young trees draw down more carbon from the atmosphere than fully
+                grown trees.<a
+                  class="inline-block ml-8 font-bold text-green-700 hover:text-yellow-500 transition-all duration-200"
+                  href="#"
+                  >Read more</a
+                >
+              </p>
+            </div>
+
+            <img
+              class="h-full md:w-full"
+              src="../images/h1-2.jpg"
+              alt="Reforestation"
+            />
+          </div>
+
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-8 lg:gap-12 items-center"
+          >
+            <img
+              class="h-full md:w-full row-start-2 md:row-start-1"
+              src="../images/h2.jpg"
+              alt="Forest conservation"
+            />
+            <div class="flex flex-col gap-2">
+              <h2 class="text-2xl font-bold">Forest conservation</h2>
+              <p class="font-medium italic mb-3">
+                Protect old growth forests from deforestation.
+              </p>
+
+              <p>
+                Forest Conservation (Avoided Deforestation) Best for protecting
+                old-growth forest and wildlife habitat in areas a risk of
+                deforestation. Forest conservation (also called avoided
+                deforestation in the carbon world) aims to protect the enormous
+                carbon stored in existing old-growth forests. Forest
+                conservation projects protect habitat for a wide range of flora
+                and fauna, including these Hoatzins found in the Madre de Dios
+                project.<a
+                  class="inline-block ml-8 font-bold text-green-700 hover:text-yellow-500 transition-all duration-200"
+                  href="#"
+                  >Read more</a
+                >
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-8 lg:gap-12 items-center"
+          >
+            <div class="flex flex-col gap-2">
+              <h2 class="text-2xl font-bold">Improved forest management</h2>
+              <p class="font-medium italic mb-3">
+                Best for managing existing forests to produce forest products
+                and maintain natural ecosystems.
+              </p>
+
+              <p>
+                The McCloud River Project combines harvesting with long term
+                land management also includes wildfire management. Improved
+                Forest Management (IFM) projects are critical carbon projects
+                that draw down carbon, maintain species habitat, and allow the
+                sustainable harvest of timber all at the same time.
+                <a
+                  class="inline-block ml-8 font-bold text-green-700 hover:text-yellow-500 transition-all duration-200"
+                  href="#"
+                  >Read more</a
+                >
+              </p>
+            </div>
+
+            <img
+              class="h-full md:w-full"
+              src="../images/h3.jpg"
+              alt="forest management"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-------- BLOG --------->
+
+      <div id="blog" class="py-24 px-6 md:px-12 lg:px-32 bg-yellow-50">
+        <span
+          class="block text-center text-sm font-bold text-green-700 uppercase mb-2"
+          >our blog</span
+        >
+
+        <h2 class="text-2xl text-center capitalize font-bold mb-16">
+          Featured Articles
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div class="flex flex-col gap-4">
+            <img
+              class="px-8 md:px-2 mb-4"
+              src="../images/i1 (1).png"
+              alt="Ecosystem Restoration graph"
+            />
+            <h3 class="text-2xl font-bold">
+              Reforestation: Ecosystem Restoration
+            </h3>
+            <p>
+              Pure ecosystem restoration projects work to regrow land with
+              native species in hopes of restoring ecosystems and preserving
+              them in the long run. Fazendo Sao Nicolao in Mato Grosso, Brazil
+              is an example of a project funded for the purpose of capturing
+              carbon and restoring biodiversity. Fazendo Sao Nicolao has planted
+              26 native species over almost 2,000 hectares since 1999 on land
+              previously deforested for cattle grazing.
+            </p>
+            <a
+              class="font-bold text-green-700 hover:text-yellow-500 transition-all duration-200"
+              href="#"
+              >Read the full article</a
+            >
+          </div>
+
+          <div class="flex flex-col gap-4">
+            <img
+              class="px-8 md:px-2 mb-4"
+              src="../images/i2 (1).png"
+              alt="Tree Plantation graph"
+            />
+            <h3 class="text-2xl font-bold">Reforestation: Tree Plantation</h3>
+            <p>
+              Other reforestation projects combine tree planting with economic
+              timber models where projects grow trees that are scheduled for
+              harvest down the line. Even though these projects harvest timber
+              they plant, they earn carbon credits because they commit to
+              maintaining an average amount of carbon stock over the course of
+              the project — and they should show that the project would not have
+              occurred without carbon funding.
+            </p>
+            <a
+              class="font-bold text-green-700 hover:text-yellow-500 transition-all duration-200"
+              href="#"
+              >Read the full article</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="py-24">
+        <div class="px-6 md:px-12">
+          <div class="text-center px-10 md:px-36 mb-10">
+            <h2 class="text-2xl capitalize font-semibold mb-6">
+              main features
+            </h2>
+            <p class="text-lg">
+              Sit amet consectetur adipisicing elit. Labore odit nesciunt a
+              ratione! Minus sint excepturi aperiam quam magni provident
+              tenetur, accusantium necessitatibus nostrum ducimus voluptas
+              saepe, cumque earum.
+            </p>
+          </div>
+          <div class="grid grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-10">
+            <div class="flex flex-col text-center">
+              <ion-icon
+                class="text-6xl self-center text-lime-700 mb-4"
+                name="rocket-outline"
+              ></ion-icon>
+
+              <span class="text-xl font-semibold mb-4"
+                >Launch your business</span
+              >
+              <p>
+                Dolor sit amet consectetur adipisicing elit. Vel modi soluta
+                voluptas, amet consectetur.
+              </p>
+            </div>
+            <div class="flex flex-col text-center">
+              <ion-icon
+                class="text-6xl text-lime-700 self-center mb-4"
+                name="extension-puzzle-outline"
+              ></ion-icon>
+              <span class="text-xl font-semibold mb-4">Easy Customization</span>
+              <p>
+                Dolor sit amet consectetur adipisicing elit. Vel modi soluta
+                voluptas, vitae autem.
+              </p>
+            </div>
+            <div class="flex flex-col text-center">
+              <ion-icon
+                class="text-6xl text-lime-700 self-center mb-4"
+                name="people-outline"
+              ></ion-icon>
+              <span class="text-xl font-semibold mb-4"
+                >Over 3 million users</span
+              >
+              <p>
+                Dolor sit amet consectetur adipisicing elit. illo nisi vero
+                dolore amet voluptatum vitae autem?
+              </p>
+            </div>
+            <div class="flex flex-col text-center">
+              <ion-icon
+                class="text-6xl text-lime-700 self-center mb-4"
+                name="bar-chart-outline"
+              ></ion-icon>
+              <span class="text-xl font-semibold mb-4"
+                >Compatible with over 90% browsers</span
+              >
+              <p>
+                Dolor sit amet consectetur adipisicing elit. Vel modi soluta
+                vitae autem.
+              </p>
+            </div>
+            <div
+              class="flex flex-col text-center col-span-2 max-w-xs justify-self-center md:col-span-1"
+            >
+              <ion-icon
+                class="text-6xl text-lime-700 self-center mb-4"
+                name="hourglass-outline"
+              ></ion-icon>
+              <span class="text-xl font-semibold mb-4">Time saving</span>
+              <p>
+                Dolor sit amet consectetur adipisicing elit. Vel modi soluta
+                vitae autem?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+      <!-------- contact ---------->
+      <div
+        id="contact"
+        class="bg-gradient-to-br from-green-400 to-yellow-200 p-3 mx-10 my-24 md:mx-20 lg:mx-52 xl:mx-64 rounded-3xl"
+      >
+        <div class="bg-white pt-12 px-4 pb-6 rounded-2xl">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-y items-start pb-8">
+            <div class="md:col-span-2 md:px-8">
+              <h2 class="md:px-6 text-2xl font-bold mb-10">Get in touch</h2>
+              <div class="pb-8">
+                <div>
+                  <form class="grid grid-cols-1 gap-6" action="">
+                    <div>
+                      <label class="block font-medium mb-2" for="text"
+                        >Name</label
+                      >
+                      <input
+                        class="font-medium p-2 border-2 border-green-400 rounded-lg w-full focus:outline-green-700 placeholder:font-extralight outline-offset-4"
+                        type="text"
+                        placeholder="Full name"
+                        required
+                      />
+                    </div>
+
+                    <div>
+                      <label class="block font-medium mb-2" for="email"
+                        >Email</label
+                      >
+                      <input
+                        class="font-medium p-2 border-2 border-green-400 rounded-lg w-full focus:outline-green-700 outline-offset-4 placeholder:font-extralight"
+                        type="email"
+                        placeholder="Email"
+                        required
+                      />
+                    </div>
+
+                    <div>
+                      <label class="block font-medium mb-2" for="select where"
+                        >Country of residence</label
+                      >
+                      <select
+                        class="font-medium p-2 border-2 border-green-400 rounded-lg w-full focus:outline-green-700 outline-offset-4"
+                        name="select where"
+                        id=""
+                        required
+                      >
+                        <option value="">Please choose a country</option>
+                        <option value="usa">USA</option>
+                        <option value="london">London</option>
+                        <option value="japan">Japan</option>
+                        <option value="china">china</option>
+                        <option value="korea">korea</option>
+                      </select>
+                    </div>
+
+                    <div>
+                      <label class="block font-medium mb-2" for="message"
+                        >Messsage</label
+                      >
+                      <textarea
+                        class="font-medium p-2 border-2 border-green-400 rounded-lg w-full focus:outline-green-700 outline-offset-4"
+                        name="message"
+                        id="message"
+                        cols="30"
+                        rows="5"
+                      ></textarea>
+                    </div>
+
+                    <button
+                      class="w-fit px-12 py-6 bg-gradient-to-r from-green-400 to-yellow-600 text-white text-lg font-semibold rounded-full hover:scale-110 hover:bg-gradient-to-l transition-all duration-200 focus:outline-green-700 outline-offset-4"
+                    >
+                      Submit
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+
+            <div class="">
+              <div class="mb-5">
+                <h2 class="font-bold text-2xl mb-6">How to reach us</h2>
+                <h3 class="font-medium text-lg mb-2">Address</h3>
+                <p class="font-medium">
+                  360 Rue Saint-Jacques <br />
+                  Montréal, QC H2Y 1P5 <br />
+                  Canada
+                </p>
+              </div>
+
+              <div class="mb-5">
+                <h3 class="font-medium text-lg mb-2">Phone</h3>
+                <span class="font-medium">+1 514 883 1211</span>
+              </div>
+
+              <h3 class="font-medium text-lg mb-2">Working Hours</h3>
+              <p class="font-medium">
+                Mon - Fri: 8:30am - 7:30pm <br />
+                Sat: 9:00am - 4:30pm
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ------FOOTER------ -->
+
+      <div class="bg-yellow-50 pt-20 pb-10 px-2 md:px-10 lg:px-32">
+        <div class="bg-gradient-to-br from-green-400 to-yellow-200 rounded-3xl">
+          <div
+            class="grid grid-cols-10 gap-y-8 px-2 md:px-6 lg:px-20 pt-10 mb-10"
+          >
+            <div class="col-span-3 pl-2 md:pl-4">
+              <h3 class="text-lg font-bold mb-6">About</h3>
+              <ul class="flex flex-col gap-3">
+                <li>
+                  <a
+                    class="font-medium hover:border-b-2 border-black hover:pb-1 hover:font-bold"
+                    href="#"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="font-medium hover:border-b-2 border-black hover:pb-1 hover:font-bold"
+                    href="#"
+                    >Surppot</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="font-medium hover:border-b-2 border-black hover:pb-1 hover:font-bold"
+                    href="#"
+                    >About us</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="font-medium hover:border-b-2 border-black hover:pb-1 hover:font-bold"
+                    href="#"
+                    >FQA</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="font-medium hover:border-b-2 border-black hover:pb-1 hover:font-bold"
+                    href="#"
+                    >Contact us</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-span-7 md:col-span-4 md:-translate-x-4">
+              <h3 class="text-lg font-bold mb-6">Languages</h3>
+              <div class="flex flex-col gap-1">
+                <ul class="flex gap-0.5 md:1.5 lg:gap-2">
+                  <li
+                    class="py-1 px-1.5 md:px-2.5 hover:bg-green-700 hover:text-white font-medium"
+                  >
+                    <a href="#">Deutsch</a>
+                  </li>
+                  <li
+                    class="py-1 px-1.5 md:px-2.5 bg-green-700 text-white font-medium"
+                  >
+                    <a href="#">English</a>
+                  </li>
+                  <li
+                    class="py-1 px-1.5 md:px-2.5 hover:bg-green-700 hover:text-white font-medium"
+                  >
+                    <a href="#">Indonesian</a>
+                  </li>
+                </ul>
+
+                <ul class="flex gap-0.5 md:1.5 lg:gap-2">
+                  <li
+                    class="py-1 px-1.5 md:px-2.5 hover:bg-green-700 hover:text-white font-medium"
+                  >
+                    <a href="#">Française</a>
+                  </li>
+
+                  <li
+                    class="py-1 px-1.5 md:px-2.5 hover:bg-green-700 hover:text-white font-medium"
+                  >
+                    <a href="#">Español</a>
+                  </li>
+                  <li
+                    class="py-1 px-1.5 md:px-2.5 hover:bg-green-700 hover:text-white font-medium"
+                  >
+                    <a href="#">Português</a>
+                  </li>
+                </ul>
+
+                <ul class="flex gap-0.5 md:1.5 lg:gap-2">
+                  <li
+                    class="py-1 px-1.5 md:px-2.5 hover:bg-green-700 hover:text-white font-medium"
+                  >
+                    <a href="#">Nederlands</a>
+                  </li>
+                  <li
+                    class="py-1 px-1.5 md:px-2.5 hover:bg-green-700 hover:text-white font-medium"
+                  >
+                    <a href="#">Italian</a>
+                  </li>
+                  <li
+                    class="py-1 px-1.5 md:px-2.5 hover:bg-green-700 hover:text-white font-medium"
+                  >
+                    <a href="#">Polnisch</a>
+                  </li>
+                </ul>
+
+                <ul class="flex gap-0.5 md:1.5 lg:gap-2">
+                  <li
+                    class="py-1 px-1.5 md:px-2.5 hover:bg-green-700 hover:text-white font-medium"
+                  >
+                    <a href="#">Türkç</a>
+                  </li>
+                  <li
+                    class="py-1 px-1.5 md:px-2.5 hover:bg-green-700 hover:text-white font-medium"
+                  >
+                    <a href="#">Tiếng Việt</a>
+                  </li>
+
+                  <li
+                    class="py-1 px-1.5 md:px-2.5 hover:bg-green-700 hover:text-white font-medium"
+                  >
+                    <a href="#">Pyccкий</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="col-span-full justify-self-center md:justify-self-start md:col-span-3 px-6"
+            >
+              <div class="bg-green-700 p-2 rounded-full mb-6">
+                <div class="flex items-center bg-white pl-2 py-1 rounded-full">
+                  <img class="h-16" src="../images/logo.png" alt="logo" />
+                  <div
+                    class="text-xl font-bold font-mono uppercase italic text-green-800 -translate-x-5 translate-y-2"
+                  >
+                    bosque
+                  </div>
+                </div>
+              </div>
+              <div class="flex justify-center gap-6">
+                <a href="#"
+                  ><ion-icon
+                    class="text-3xl text-green-700 hover:scale-125"
+                    name="logo-facebook"
+                  ></ion-icon
+                ></a>
+                <a href="#"
+                  ><ion-icon
+                    class="text-3xl text-green-700 hover:scale-125"
+                    name="logo-twitter"
+                  ></ion-icon
+                ></a>
+                <a href="#"
+                  ><ion-icon
+                    class="text-3xl text-green-700 hover:scale-125"
+                    name="logo-linkedin"
+                  ></ion-icon
+                ></a>
+              </div>
+            </div>
+          </div>
+          <p class="text-center text-sm font-light">
+            Built with HTML5 and TailwindCss
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
